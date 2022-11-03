@@ -5,18 +5,25 @@ let body = document.querySelector("body");
 let btn = document.querySelector("button");
 
         //HÄR VILL JAG SLUMPA ETT NUMMER NÄR JAG TRYCKER PÅ KNAPPEN
+        const result = dice()
 
-btn.addEventListener("click", dice)
+        btn.addEventListener("click", dice) 
 
-function dice() {
-    return Math.floor (Math.random() * 7);
-}
+        
+        function dice () {
+            
+            console.log("hej")
+            return Math.round (Math.random() * 6);
+            
+        }
+        div.innerHTML = result
+        
+        body.appendChild(div);
+        
+       
 
-dice()
 
-const result = dice()
 
 console.log(result)
 
-body.appendChild(div);
-div.innerHTML = result
+
